@@ -1,0 +1,70 @@
+{% extends 'base-db-admin.html' %}
+{% load static %}
+{% block main %}
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h3>All Volunteers</h3>
+          </div>
+          <div class="card-body">
+            <div class="list-group">
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <h5>#</h5>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>Volunteer Name</h5>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>Email ID</h5>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>Contact</h5>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>Reg. Date</h5>
+                  </div>
+                  <div class="col-md-1">
+                    <h5>Status</h5>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>Action</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <p>1</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p>Mon</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p>rgdavijr@student.hau.edu.com</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p>9090909090</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p>02/02/2022</p>
+                  </div>
+                  <div class="col-md-1">
+                    <p>pending</p>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="{% url 'view_volunteerdetail' 2 %}" class="btn btn-info">View Details</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main %}

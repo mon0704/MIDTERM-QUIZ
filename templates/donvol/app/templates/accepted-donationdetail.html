@@ -1,0 +1,102 @@
+{% extends 'base-db-admin.html' %}
+{% load static %}
+{% block main %}
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h3>View Accepted Donation Detail</h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Donor Details</h5>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Donor Name</h5>
+                    <p>Nilesh Borate</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Donor Contact</h5>
+                    <p>9000000000</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Email</h5>
+                    <p>nilesh@gmail.com</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Donor Pic</h5>
+                    <img src="{% static 'images/cloth-donation.jfif' %}" width="80" height="80" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h5>Donation Details</h5>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Donation Name</h5>
+                    <p>Other</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Donation Pic</h5>
+                    <img src="{% static 'images/cloth-donation.jfif' %}" width="80" height="80" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Collection Location</h5>
+                    <p>Bhosari Pune</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Donation Date</h5>
+                    <p>20/02/2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Status</h5>
+                <span class="text-center bg-danger font-weight-bold text-light text-light py-2 rounded-pill px-5"> Accept</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Admin Remark</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Select Donation Distribution Area</h5>
+                <select class="form-control" name="donationareaid" required>
+                  <option value="1">Bhosari</option>
+                  <option value="2">Pimpri</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Select Volunteer</h5>
+                <select class="form-control" name="donationareaid" required>
+                  <option value="1">Vol1</option>
+                  <option value="2">Vol2</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary px-5">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main %}
